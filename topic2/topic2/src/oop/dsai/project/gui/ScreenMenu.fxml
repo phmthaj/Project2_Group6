@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.dsai.project.gui.ScreenMenuController">
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" prefHeight="70.0" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="selectGenericTreeItem" mnemonicParsing="false" onAction="#selectGenericTree" prefHeight="40.0" prefWidth="120.0" text="Generic Tree" />
+                <Button mnemonicParsing="false" onAction="#selectBinaryTree" prefHeight="40.0" prefWidth="120.0" text="Binary Tree" />
+                <Button mnemonicParsing="false" onAction="#selectBalancedTree" prefHeight="40.0" prefWidth="120.0" text="Balanced Tree" />
+                <Button ellipsisString="" mnemonicParsing="false" onAction="#selectBalancedBinaryTree" prefHeight="40.0" prefWidth="160.0" text="Balanced Binary Tree" />
+                <Button fx:id="helpMenuButton" mnemonicParsing="false" onAction="#selectHelpMenu" prefHeight="40.0" prefWidth="120.0" text="Help Menu" />
+                <Button fx:id="exitButton" mnemonicParsing="false" onAction="#pressExitButton" prefHeight="40.0" prefWidth="120.0" text="Exit">
+                    <HBox.margin>
+                        <Insets right="85.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </HBox>
+    </bottom>
+    <top>
+        <Label alignment="CENTER" text="Visualization of Tree Data Structures" textFill="#1616da" BorderPane.alignment="CENTER">
+            <font>
+                <Font size="40.0" />
+            </font>
+            <BorderPane.margin>
+                <Insets top="5.0" />
+            </BorderPane.margin>
+            <effect>
+                <SepiaTone />
+            </effect>
+        </Label>
+    </top>
+    <center>
+        <ImageView fitHeight="388.0" fitWidth="444.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+            <image>
+                <Image url="@../../../../pic/treelogo.png" />
+            </image></ImageView>
+    </center>
+</BorderPane>
